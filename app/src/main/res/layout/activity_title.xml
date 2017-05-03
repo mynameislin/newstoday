@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:text="返回"
+        android:textSize="20dp"
+        android:id="@+id/title_fan"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="14dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:id="@+id/title_ll"
+        android:layout_height="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的频道"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:id="@+id/wodepindao"
+            android:layout_weight="2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_bianji"
+            android:text="编辑"
+            android:textSize="20sp"
+            android:textColor="#D43D3D"
+            android:layout_marginRight="20dp"
+             />
+
+
+    </LinearLayout>
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/pindao_grid"
+        android:numColumns="4"
+        android:layout_below="@+id/title_ll"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></GridView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="推荐频道"
+        android:textColor="#000000"
+        android:id="@+id/tuijianpindao"
+        android:layout_below="@+id/pindao_grid"
+        android:layout_marginTop="30dp"
+        />
+    <GridView
+        android:layout_width="match_parent"
+        android:id="@+id/tuijian_grid"
+        android:layout_below="@+id/tuijianpindao"
+        android:layout_marginTop="20dp"
+        android:layout_height="150dp"
+        android:numColumns="4"
+        >
+    </GridView>
+
+</RelativeLayout>
